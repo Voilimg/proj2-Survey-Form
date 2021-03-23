@@ -1,0 +1,98 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Survey Form</title>
+ </head>
+  <body>
+    <header>
+        <h1 id="title">Lesson Survey Form</h1>
+      <p id="description"><em>Welcome to come experience our lessons</em></p>
+    </header>
+
+      <form id="survey-form">
+        
+       <fieldset class="form1">
+        <div class="form2">
+         <label for="name" id="name-label">Name:</label><br>
+         <input type="text" id="name" name="user-name" placeholder="your name" required><br>
+         <label for="email" id="email-label">Email:</label><br>
+         <input type="email" id="email" name="user-email" placeholder="Example: @outlook.com" required><br>
+         <label for="number" id="number-label">Age:</label><br>
+         <input type="number" id="number" name="user_age" placeholder="your age" min="3" max="60" required><br>
+         <label for="password" id="password-label">Password</label><br>
+         <input type="password" id="password" name="user_password" placeholder="you can put namuber and symbol" aria-required="password"/><br>
+         </div>
+         <div>
+         <label for="lesson">Lesson role:</label><br>
+         <select id="lesson" name="user_lesson">
+       
+         <optgroup label="Instrument">
+         <option>Select a lesson</option>
+         <option value="piano">Piano</option>
+         <option value="violin">Violin</option>
+         <option value="guitar">Guitar</option>
+         <option value="flute">Flute</option>
+         <option value="trumpet">Trumpet</option>
+         <option value="trombone">Trombone</option>
+         </optgroup>
+        </select><br>
+       </div>
+        
+       <div class="radio">
+       <label for="time">When will you have time to our lesson?</label><br>
+       <input type="radio" id="morning" value="morning" name="time">
+       <label for="morning" class="light">Morning</label><br>
+       <input type="radio" id="noon" value="noon" name="time">
+       <label for="noon" class="light">Noon</label><br>
+       <input type="radio" id="evening" value="evening" name="time">
+       <label for="evening" class="light">Evening</label><br> 
+       </div>
+         
+   
+       <label for="dropdown">Which lesson is your favorite?</label><br>
+       <select id="dropdown" name="user_lesson">
+         <option>Select a lesson</option>
+         <option value="violin">Violin</option>
+         <option value="guitar">Guitar</option>
+         <option value="flute">Flute</option>
+         <option value="trumpet">Trumpet</option>
+         <option value="trombone">Trombone</option>
+        </select><br>
+      
+       <div class="follow"> 
+     
+       <label>Which teachers do you want to follow with:</label><br>
+       <input type="checkbox" id="Miss Hong" value="interest_Miss Hong" name="user_interest">
+       <label for="Miss Hong" class="light">Miss Hong</label><br>
+       <input type="checkbox" id="Miss Han" value="interest_Miss Han" name="user_interest">
+       <label for="Miss Han" class="light">Miss Han</label><br>
+       <input type="checkbox" id="Mr.Zhang" value="interest_Mr.Zhang" name="user_interest">
+       <label for="Mr.Zhang" class="light">Mr. Zhang</label><br>
+       <input type="checkbox" id="Miss Cheng" value="interest_Miss Cheng" name="user_interest">
+       <label for="Miss Cheng" class="light">Miss Cheng</label><br>
+       <input type="checkbox" id="Miss Huang" value="interest_Miss Huang" name="user_interest">
+       <label for="Miss Huang" class="light">Miss Huang</label><br>
+       <input type="checkbox" id="Mr.Xu" value="interest_Mr.Xu" name="user_interest">
+       <label for="Mr.Xu" class="light">Mr. Xu</label><br>
+       <input type="checkbox" id="Miss Lu" value="interest_Miss Lu" name="user_interest">
+       <label for="Miss Lu" class="light">Miss Lu</label><br>
+       <input type="checkbox" id="Miss Pi" value="interest_Miss Pi" name="user_interest">
+       <label for="Miss Pi" class="light">Miss Pi</label><br>
+       <input type="checkbox" id="Mr.Wu" value="interest_Mr.Wu" name="user_interest">
+       <label for="Mr.Wu" class="light">Mr. Wu</label><br>
+       <input type="checkbox" id="Mr.Guo" value="interest_Mr.Guo" name="user_interest">
+       <label for="Mr.Guo" class="light">Mr. Guo</label><br>
+       </div>
+       <div class="comments">
+       <label for="com">Comments:</label><br>
+       <textarea id="com" name="user_com"></textarea>
+       </div>
+      </fieldset>
+       <div>
+        <button id="submit" type="submit">Submit</button>
+       </div>
+       </form>
+     </body>
+   </html>
